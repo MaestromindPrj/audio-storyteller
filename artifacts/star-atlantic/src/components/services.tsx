@@ -68,6 +68,12 @@ const services = [
     title: "Training Program",
     description: "Hands-on training for new learners in audio production, sound design, mixing, and music technology — guided by our seasoned engineers in a real studio environment.",
     icon: GraduationCap
+  },
+  {
+    id: "music-tutorship",
+    title: "Music Tutorship",
+    description: "One-on-one and group music tutoring covering theory, composition, vocal techniques, and instrument training — tailored for beginners to advanced learners by experienced musicians.",
+    icon: Music
   }
 ];
 
