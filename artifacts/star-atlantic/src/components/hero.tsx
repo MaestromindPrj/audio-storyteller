@@ -73,7 +73,14 @@ export function Hero() {
             className="relative flex items-center justify-center h-[500px]"
           >
             <div className="relative w-72 h-72 md:w-96 md:h-96">
-              <div className="absolute inset-0 orb-3d z-10"></div>
+              <div className="absolute inset-0 orb-3d z-10">
+                <img
+                  src="/logo-icon-hero.jpg"
+                  alt="Star Atlantic Logo"
+                  className="absolute inset-0 w-full h-full object-cover rounded-full"
+                  style={{ mixBlendMode: "multiply", opacity: 0.85 }}
+                />
+              </div>
               <div className="absolute -bottom-12 left-1/2 -translate-x-1/2 w-48 h-8 orb-shadow z-0"></div>
             </div>
           </motion.div>
