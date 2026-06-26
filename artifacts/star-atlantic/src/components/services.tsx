@@ -54,19 +54,19 @@ const services = [
   {
     id: "video-production",
     title: "Complete Video Production",
-    description: "Full-service video production — concept to final cut — with cinematic visuals and professional-grade post-production.",
+    description: "Full-service video production concept to final cut with cinematic visuals and professional-grade post-production.",
     icon: Video
   },
   {
     id: "ai-filmmaking",
     title: "AI Film Making",
-    description: "From script to screen, we combine generative tools with human creative direction — producing music videos, behind-the-scenes footage, and promotional content that keeps your artistic vision front and center.",
+    description: "From script to screen, we combine generative tools with human creative direction producing music videos, behind-the-scenes footage, and promotional content that keeps your artistic vision front and center.",
     icon: Sparkles
   },
   {
     id: "training",
     title: "Training Program",
-    description: "Hands-on training for new learners in audio production, sound design, mixing, and music technology — guided by our seasoned engineers in a real studio environment.",
+    description: "Hands-on training for new learners in audio production, sound design, mixing, and music technology guided by our seasoned engineers in a real studio environment.",
     icon: GraduationCap
   }
 ];

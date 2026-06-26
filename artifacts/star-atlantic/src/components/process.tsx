@@ -4,27 +4,27 @@ const steps = [
   {
     number: "1",
     title: "Consultation",
-    description: "We understand your project — whether it's an audio production, a video shoot, or an AI-assisted film. We align on creative vision, scope, budget, and timeline from day one."
+    description: "We understand your project whether it's an audio production, a video shoot, or an AI-assisted film. We align on creative vision, scope, budget, and timeline from day one."
   },
   {
     number: "2",
     title: "Pre-Production",
-    description: "Script breakdowns, storyboarding, casting, location scouting, session planning, and AI model selection — everything prepared so production runs without friction."
+    description: "Script breakdowns, storyboarding, casting, location scouting, session planning, and AI model selection everything prepared so production runs without friction."
   },
   {
     number: "3",
     title: "Production",
-    description: "From studio recording, Foley, and ADR to on-location video shoots and AI-generated cinematics — we execute with precision across every medium."
+    description: "From studio recording, Foley, and ADR to on-location video shoots and AI-generated cinematics we execute with precision across every medium."
   },
   {
     number: "4",
     title: "Post-Production",
-    description: "Audio editing, mixing, mastering, sound design, video editing, colour grading, and AI-enhanced visual processing — all under one roof to the highest industry standards."
+    description: "Audio editing, mixing, mastering, sound design, video editing, colour grading, and AI-enhanced visual processing all under one roof to the highest industry standards."
   },
   {
     number: "5",
     title: "Delivery",
-    description: "Final review, client revisions, and secure delivery of all assets — formatted and optimised for broadcast, OTT, cinema, or digital distribution."
+    description: "Final review, client revisions, and secure delivery of all assets formatted and optimised for broadcast, OTT, cinema, or digital distribution."
   }
 ];
 

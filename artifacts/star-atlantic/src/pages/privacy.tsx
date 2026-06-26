@@ -34,9 +34,9 @@ export default function Privacy() {
             <h2 className="text-xl font-semibold text-foreground mb-3">2. Information We Collect</h2>
             <p>We may collect the following types of information:</p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
-              <li><strong className="text-foreground">Contact Information</strong> — Name, company name, email address, and phone number submitted through our contact form.</li>
-              <li><strong className="text-foreground">Project Information</strong> — Details about your project, budget range, timeline, and requirements that you voluntarily share with us.</li>
-              <li><strong className="text-foreground">Usage Data</strong> — Standard web analytics data such as pages visited, time spent on site, and browser type (collected anonymously).</li>
+              <li><strong className="text-foreground">Contact Information</strong> Name, company name, email address, and phone number submitted through our contact form.</li>
+              <li><strong className="text-foreground">Project Information</strong> Details about your project, budget range, timeline, and requirements that you voluntarily share with us.</li>
+              <li><strong className="text-foreground">Usage Data</strong> Standard web analytics data such as pages visited, time spent on site, and browser type (collected anonymously).</li>
             </ul>
           </section>
 
