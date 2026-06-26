@@ -61,6 +61,8 @@ export function Industries() {
                     src={client.logo}
                     alt={`${client.name} logo`}
                     className="w-full h-full object-contain transition-all duration-300"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
               ) : (

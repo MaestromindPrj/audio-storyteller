@@ -56,6 +56,8 @@ export function About() {
                 src="/about-studio.jpg" 
                 alt="High-end studio microphone in cinematic lighting" 
                 className="w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             
