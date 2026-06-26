@@ -21,13 +21,13 @@ export function About() {
             
             <div className="space-y-6 text-muted-foreground text-lg font-light leading-relaxed">
               <p>
-                Based in the creative hub of Chennai, India, Star Atlantic Productions was born from a singular obsession: to provide a sanctuary where artists and creators realize their ultimate sonic vision.
+                Based in the creative hub of Chennai, India, Star Atlantic Productions was born from a singular obsession: to provide a sanctuary where artists and creators realize their ultimate sonic vision. What sets us apart is our artist-first philosophy and our close-knit creative community, where collaboration and innovation drive every project. We thrive on fostering authentic connections, helping artists break new ground while staying true to their individual voice.
               </p>
               <p>
-                We don't just hit record. We partner with you. From the initial consultation to the final mastering, our approach is meticulous, collaborative, and focused on the emotional impact of the final product.
+                We don't just hit record. We partner with you. From the initial consultation to the final mastering, our approach is meticulous, collaborative, and focused on the emotional impact of the final product. When you begin a project with us, we start by listening to your vision and inspirations, then hold a brainstorming session to outline your goals and preferences. Throughout the process, we provide creative input, share progress updates, and welcome your feedback at every stage — ensuring your voice stays at the center of every decision.
               </p>
               <p>
-                Equipped with cutting-edge analog and digital gear, tuned acoustic spaces, and a team of seasoned engineers, we deliver audio experiences that stand shoulder to shoulder with the best in the world.
+                Equipped with cutting-edge analog and digital gear — including the classic Neumann U87 microphones, Universal Audio Apollo interfaces, and vintage SSL mixing consoles — as well as acoustically treated spaces for optimal sound, we deliver audio experiences that stand shoulder to shoulder with the best in the world. Our engineers specialise in genres from indie pop to classical fusion, each bringing years of experience in both live and studio environments.
               </p>
             </div>
             

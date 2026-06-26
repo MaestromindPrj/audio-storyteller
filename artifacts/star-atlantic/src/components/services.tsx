@@ -60,7 +60,7 @@ const services = [
   {
     id: "ai-filmmaking",
     title: "AI Film Making",
-    description: "Next-generation AI-assisted filmmaking — from script to screen — combining generative tools with human creative direction.",
+    description: "From script to screen, we combine generative tools with human creative direction — producing music videos, behind-the-scenes footage, and promotional content that keeps your artistic vision front and center.",
     icon: Sparkles
   }
 ];
