@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
-import { Mic, Headphones, Music, Radio, MonitorPlay, Film, BookOpen, Volume2, Video } from "lucide-react";
+import { Mic, Headphones, Music, Radio, MonitorPlay, Film, BookOpen, Volume2, Video, Sparkles } from "lucide-react";
 
 const services = [
   {
@@ -56,6 +56,12 @@ const services = [
     title: "Complete Video Production",
     description: "Full-service video production — concept to final cut — with cinematic visuals and professional-grade post-production.",
     icon: Video
+  },
+  {
+    id: "ai-filmmaking",
+    title: "AI Film Making",
+    description: "Next-generation AI-assisted filmmaking — from script to screen — combining generative tools with human creative direction.",
+    icon: Sparkles
   }
 ];
 
