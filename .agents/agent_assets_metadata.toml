@@ -1,0 +1,20 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "CK0MLf6w6lkL29SSu3akJ"
+uri = "file://artifacts/star-atlantic/public/hero-bg.png"
+type = "image"
+title = "Cinematic recording studio hero"
+
+[[generated]]
+id = "7uoOdZW8JCQZFJDTZM7pi"
+uri = "file://artifacts/star-atlantic/public/about-studio.png"
+type = "image"
+title = "Atmospheric audio equipment"
+
+[[generated]]
+id = "DqDUve_WjJjRUmgwhMG4S"
+uri = "file://artifacts/star-atlantic/public/services-bg.png"
+type = "image"
+title = "Audio waveform abstract"
