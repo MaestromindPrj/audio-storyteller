@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
-import { Mic, Headphones, Music, Radio, MonitorPlay, Film, BookOpen, Volume2, Video, Sparkles } from "lucide-react";
+import { Mic, Headphones, Music, Radio, MonitorPlay, Film, BookOpen, Volume2, Video, Sparkles, GraduationCap } from "lucide-react";
 
 const services = [
   {
@@ -62,6 +62,12 @@ const services = [
     title: "AI Film Making",
     description: "From script to screen, we combine generative tools with human creative direction — producing music videos, behind-the-scenes footage, and promotional content that keeps your artistic vision front and center.",
     icon: Sparkles
+  },
+  {
+    id: "training",
+    title: "Training Program",
+    description: "Hands-on training for new learners in audio production, sound design, mixing, and music technology — guided by our seasoned engineers in a real studio environment.",
+    icon: GraduationCap
   }
 ];
 

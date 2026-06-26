@@ -250,6 +250,7 @@ export function Contact() {
                                 <SelectItem value="ott">OTT Audio Post</SelectItem>
                                 <SelectItem value="video-production">Complete Video Production</SelectItem>
                                 <SelectItem value="ai-filmmaking">AI Film Making</SelectItem>
+                                <SelectItem value="training">Training Program</SelectItem>
                                 <SelectItem value="multiple">Multiple Services</SelectItem>
                               </SelectContent>
                             </Select>
