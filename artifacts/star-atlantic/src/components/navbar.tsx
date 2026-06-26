@@ -27,7 +27,7 @@ export function Navbar() {
     >
       <div className="container mx-auto px-4 md:px-6 h-20 flex items-center justify-between">
         <div className="flex items-center gap-2 cursor-pointer" onClick={() => scrollToSection("hero")}>
-          <img src="/logo-full.png" alt="Star Atlantic Logo" className="h-10 w-auto object-contain filter invert" />
+          <img src="/logo-full.png" alt="Star Atlantic Logo" className="h-12 w-auto object-contain" />
         </div>
         
         <nav className="hidden md:flex items-center gap-8">
