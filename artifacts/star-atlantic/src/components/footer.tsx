@@ -35,7 +35,7 @@ export function Footer() {
             <ul className="space-y-3 text-muted-foreground font-light">
               <li className="leading-relaxed">27/49 Shanmughamani Illam, Lake View Road, West Mambalam, Chennai 600033</li>
               <li><a href="mailto:staratlanticproductions@gmail.com" className="hover:text-primary transition-colors font-medium">staratlanticproductions@gmail.com</a></li>
-              <li><a href="tel:+918883820208" className="hover:text-primary transition-colors font-medium">+91 88838 20208</a></li>
+              <li><a href="tel:+919384839644" className="hover:text-primary transition-colors font-medium">+91 93848 39644</a></li>
             </ul>
           </div>
           

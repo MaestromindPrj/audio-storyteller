@@ -94,11 +94,11 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-1">Phone</h4>
-                  <a href="tel:+918883820208" className="text-muted-foreground hover:text-primary transition-colors block mb-3">
-                    +91 88838 20208
+                  <a href="tel:+919384839644" className="text-muted-foreground hover:text-primary transition-colors block mb-3">
+                    +91 93848 39644
                   </a>
                   <Button asChild size="sm" className="rounded-full bg-[#25D366] text-white hover:bg-[#20bd5a] shadow-sm">
-                    <a href="https://wa.me/918883820208" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/919384839644" target="_blank" rel="noopener noreferrer">
                       <SiWhatsapp className="w-4 h-4 mr-2" /> WhatsApp Us
                     </a>
                   </Button>

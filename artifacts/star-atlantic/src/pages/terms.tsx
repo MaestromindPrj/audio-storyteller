@@ -83,7 +83,7 @@ export default function Terms() {
 
           <section>
             <h2 className="text-xl font-semibold text-foreground mb-3">12. Contact</h2>
-            <p>For any questions regarding these Terms, please contact us at <a href="mailto:staratlanticproductions@gmail.com" className="text-primary hover:underline">staratlanticproductions@gmail.com</a> or call <a href="tel:+918883820208" className="text-primary hover:underline">+91 88838 20208</a>.</p>
+            <p>For any questions regarding these Terms, please contact us at <a href="mailto:staratlanticproductions@gmail.com" className="text-primary hover:underline">staratlanticproductions@gmail.com</a> or call <a href="tel:+919384839644" className="text-primary hover:underline">+91 93848 39644</a>.</p>
           </section>
 
         </div>

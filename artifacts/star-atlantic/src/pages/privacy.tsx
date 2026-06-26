@@ -100,7 +100,7 @@ export default function Privacy() {
               <p><strong className="text-foreground">Star Atlantic Productions</strong></p>
               <p>27/49 Shanmughamani Illam, Lake View Road, West Mambalam, Chennai 600033, Tamil Nadu, India</p>
               <p><a href="mailto:staratlanticproductions@gmail.com" className="text-primary hover:underline">staratlanticproductions@gmail.com</a></p>
-              <p><a href="tel:+918883820208" className="text-primary hover:underline">+91 88838 20208</a></p>
+              <p><a href="tel:+919384839644" className="text-primary hover:underline">+91 93848 39644</a></p>
             </div>
           </section>
 
