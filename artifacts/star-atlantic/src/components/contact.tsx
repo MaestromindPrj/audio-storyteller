@@ -270,10 +270,10 @@ export function Contact() {
                                   </SelectTrigger>
                                 </FormControl>
                                 <SelectContent className="bg-white border-gray-100">
-                                  <SelectItem value="under-10k">Under ₹10K</SelectItem>
-                                  <SelectItem value="10k-50k">₹10K – ₹50K</SelectItem>
-                                  <SelectItem value="50k-1l">₹50K – ₹1L</SelectItem>
-                                  <SelectItem value="1l-plus">₹1L+</SelectItem>
+                                  <SelectItem value="1l-3l">₹1L – ₹3L</SelectItem>
+                                  <SelectItem value="3l-5l">₹3L – ₹5L</SelectItem>
+                                  <SelectItem value="5l-10l">₹5L – ₹10L</SelectItem>
+                                  <SelectItem value="10l-plus">₹10L+</SelectItem>
                                 </SelectContent>
                               </Select>
                               <FormMessage />
