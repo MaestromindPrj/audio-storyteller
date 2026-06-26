@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
-import { Mic, Headphones, Music, Radio, MonitorPlay, Film, BookOpen, Volume2 } from "lucide-react";
+import { Mic, Headphones, Music, Radio, MonitorPlay, Film, BookOpen, Volume2, Video } from "lucide-react";
 
 const services = [
   {
@@ -50,6 +50,12 @@ const services = [
     title: "OTT Audio Post",
     description: "Deliverables tailored specifically for Netflix, Amazon Prime, and other streaming specs.",
     icon: Film
+  },
+  {
+    id: "video-production",
+    title: "Complete Video Production",
+    description: "Full-service video production — concept to final cut — with cinematic visuals and professional-grade post-production.",
+    icon: Video
   }
 ];
 
