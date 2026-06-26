@@ -45,6 +45,14 @@ export function Footer() {
           <p className="text-muted-foreground/60 text-sm">
             © 2025 Star Atlantic Productions. All rights reserved.
           </p>
+          <div className="flex items-center gap-6">
+            <a href="/terms" className="text-muted-foreground/60 hover:text-primary text-sm transition-colors" data-testid="link-terms">
+              Terms &amp; Conditions
+            </a>
+            <a href="/privacy" className="text-muted-foreground/60 hover:text-primary text-sm transition-colors" data-testid="link-privacy">
+              Privacy Policy
+            </a>
+          </div>
         </div>
       </div>
     </footer>
