@@ -20,13 +20,13 @@ export function About() {
             
             <div className="space-y-6 text-white/70 text-lg font-light leading-relaxed">
               <p>
-                Based in the creative hub of Chennai, India, Star Atlantic Productions was born from a singular obsession: to provide a sanctuary where artists and creators can realize their ultimate sonic vision.
+                Based in the creative hub of Chennai, India, Star Atlantic Productions was born from a singular obsession: to provide a sanctuary where artists and creators realize their ultimate sonic vision.
               </p>
               <p>
-                We don't just hit record. We partner with you. From the initial consultation to the final mastering pass, our approach is meticulous, collaborative, and entirely focused on the emotional impact of the final product.
+                We don't just hit record. We partner with you. From the initial consultation to the final mastering, our approach is meticulous, collaborative, and focused on the emotional impact of the final product.
               </p>
               <p>
-                Equipped with cutting-edge analog and digital gear, tuned acoustic spaces, and a team of seasoned engineers, we deliver audio experiences that stand shoulder-to-shoulder with the best in the world.
+                Equipped with cutting-edge analog and digital gear, tuned acoustic spaces, and a team of seasoned engineers, we deliver audio experiences that stand shoulder to shoulder with the best in the world.
               </p>
             </div>
             
