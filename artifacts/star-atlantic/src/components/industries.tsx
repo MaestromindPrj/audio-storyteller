@@ -6,7 +6,7 @@ const clients: { name: string; logo: string | null; color: string }[] = [
   { name: "Pocket FM",       logo: "/pocketfm.png", color: "#8B5CF6" },
   { name: "ShareChat",       logo: "/sharechat.png",color: "#10B981" },
   { name: "Guru App (Tamil)",logo: "/guruapp.png",  color: "#F59E0B" },
-  { name: "Quick TV",        logo: null,            color: "#3B82F6" },
+  { name: "Quick TV",        logo: "/quicktv.png",  color: "#3B82F6" },
 ];
 
 const industries = [
