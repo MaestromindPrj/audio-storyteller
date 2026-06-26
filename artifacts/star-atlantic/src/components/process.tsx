@@ -4,27 +4,27 @@ const steps = [
   {
     number: "1",
     title: "Consultation",
-    description: "We discuss your creative vision, technical requirements, deliverables, and timeline."
+    description: "We understand your project — whether it's an audio production, a video shoot, or an AI-assisted film. We align on creative vision, scope, budget, and timeline from day one."
   },
   {
     number: "2",
     title: "Pre-Production",
-    description: "Script analysis, casting, session planning, and asset organization to ensure a smooth workflow."
+    description: "Script breakdowns, storyboarding, casting, location scouting, session planning, and AI model selection — everything prepared so production runs without friction."
   },
   {
     number: "3",
     title: "Production",
-    description: "Recording sessions, Foley tracking, ADR, or music composition in our premium acoustic spaces."
+    description: "From studio recording, Foley, and ADR to on-location video shoots and AI-generated cinematics — we execute with precision across every medium."
   },
   {
     number: "4",
     title: "Post-Production",
-    description: "Editing, sound design, mixing, and mastering to industry specifications."
+    description: "Audio editing, mixing, mastering, sound design, video editing, colour grading, and AI-enhanced visual processing — all under one roof to the highest industry standards."
   },
   {
     number: "5",
     title: "Delivery",
-    description: "Final review, revisions, and secure delivery of perfectly formatted audio stems and masters."
+    description: "Final review, client revisions, and secure delivery of all assets — formatted and optimised for broadcast, OTT, cinema, or digital distribution."
   }
 ];
 

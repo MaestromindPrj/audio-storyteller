@@ -5,7 +5,6 @@ export function About() {
     <section id="about" className="py-24 md:py-32 relative bg-white overflow-hidden">
       {/* Decorative background blur */}
       <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[120px] pointer-events-none" />
-
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           
@@ -38,7 +37,7 @@ export function About() {
                 <p className="text-sm text-muted-foreground uppercase tracking-wider font-semibold">Years Experience</p>
               </div>
               <div>
-                <h4 className="text-5xl font-display font-bold text-primary mb-2">500+</h4>
+                <h4 className="text-5xl font-display font-bold text-primary mb-2">243+</h4>
                 <p className="text-sm text-muted-foreground uppercase tracking-wider font-semibold">Projects Delivered</p>
               </div>
             </div>
