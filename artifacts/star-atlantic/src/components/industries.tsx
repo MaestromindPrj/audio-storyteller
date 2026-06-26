@@ -1,10 +1,12 @@
 import { motion } from "framer-motion";
 
-const clients = [
-  { name: "Kuku FM", logo: "/kukufm.png" },
-  { name: "Pocket FM", logo: "/pocketfm.png" },
-  { name: "Guru App", logo: "/guruapp.png" },
-  { name: "ShareChat", logo: "/sharechat.png" },
+const clients: { name: string; logo: string | null; color: string }[] = [
+  { name: "Kuku FM",         logo: "/kukufm.png",   color: "#F97316" },
+  { name: "Kuku TV",         logo: "/kukutv.png",   color: "#EF4444" },
+  { name: "Pocket FM",       logo: "/pocketfm.png", color: "#8B5CF6" },
+  { name: "ShareChat",       logo: "/sharechat.png",color: "#10B981" },
+  { name: "Guru App (Tamil)",logo: "/guruapp.png",  color: "#F59E0B" },
+  { name: "Quick TV",        logo: null,            color: "#3B82F6" },
 ];
 
 const industries = [
@@ -36,26 +38,49 @@ export function Industries() {
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">
             Trusted by Industry Leaders
           </h2>
+          <p className="mt-4 text-muted-foreground max-w-xl mx-auto text-base">
+            Partnering with India's top audio and streaming platforms to deliver world-class sound.
+          </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto mb-20">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-5 max-w-4xl mx-auto mb-20">
           {clients.map((client, i) => (
             <motion.div
               key={client.name}
-              data-testid={`client-logo-${client.name.toLowerCase().replace(/\s+/g, "-")}`}
+              data-testid={`client-logo-${client.name.toLowerCase().replace(/[\s()]+/g, "-")}`}
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="group flex flex-col items-center justify-center gap-4 p-6 rounded-2xl border border-gray-100 bg-white hover:border-primary/20 hover:shadow-md transition-all duration-300"
+              transition={{ duration: 0.5, delay: i * 0.08 }}
+              className="group flex flex-col items-center justify-center gap-4 p-7 rounded-2xl border border-gray-100 bg-white hover:border-primary/30 hover:shadow-lg transition-all duration-300"
+              style={{ boxShadow: "0 1px 4px 0 rgba(0,0,0,0.04)" }}
             >
-              <div className="w-24 h-24 flex items-center justify-center rounded-xl overflow-hidden bg-white">
-                <img
-                  src={client.logo}
-                  alt={`${client.name} logo`}
-                  className="w-full h-full object-contain filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
-                />
-              </div>
+              {client.logo ? (
+                <div className="w-20 h-20 flex items-center justify-center rounded-xl overflow-hidden bg-white p-1">
+                  <img
+                    src={client.logo}
+                    alt={`${client.name} logo`}
+                    className="w-full h-full object-contain transition-all duration-300"
+                  />
+                </div>
+              ) : (
+                <div
+                  className="w-20 h-20 flex items-center justify-center rounded-xl font-bold text-white text-lg tracking-tight"
+                  style={{ background: `linear-gradient(135deg, ${client.color}, ${client.color}cc)` }}
+                >
+                  {client.name.split(" ").map(w => w[0]).join("").slice(0, 2)}
+                </div>
+              )}
+              <span
+                className="font-semibold text-sm text-center transition-colors duration-300 group-hover:text-primary"
+                style={{ color: "#1a1a2e" }}
+              >
+                {client.name}
+              </span>
+              <div
+                className="h-0.5 w-8 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300"
+                style={{ background: client.color }}
+              />
             </motion.div>
           ))}
         </div>
