@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "wouter";
 import { Switch, Route, Router as WouterRouter } from "wouter";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -19,11 +18,6 @@ function Router() {
 }
 
 function App() {
-  // Always dark mode for this project
-  React.useEffect(() => {
-    document.documentElement.classList.add("dark");
-  }, []);
-
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>

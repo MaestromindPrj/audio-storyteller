@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Mic, Headphones, Music, Radio, MonitorPlay, Film, BookOpen, Volume2 } from "lucide-react";
@@ -69,15 +68,11 @@ const item = {
 
 export function Services() {
   return (
-    <section id="services" className="py-24 md:py-32 relative">
-      <div className="absolute inset-0 z-0 opacity-10 pointer-events-none">
-         <img src="/services-bg.png" alt="" className="w-full h-full object-cover" />
-      </div>
-      
+    <section id="services" className="py-24 md:py-32 relative bg-white border-t border-gray-100">
       <div className="container mx-auto px-4 md:px-6 relative z-10">
-        <div className="mb-16 md:mb-24">
+        <div className="mb-16 md:mb-24 text-center md:text-left">
           <h2 className="text-sm font-semibold text-primary uppercase tracking-widest mb-3">Our Expertise</h2>
-          <h3 className="text-4xl md:text-5xl font-display font-bold text-white">Comprehensive <br />Audio Services.</h3>
+          <h3 className="text-4xl md:text-5xl font-display font-bold text-foreground">Comprehensive <br className="hidden md:block" />Audio Services.</h3>
         </div>
 
         <motion.div 
@@ -90,14 +85,20 @@ export function Services() {
           {services.map((service) => {
             const Icon = service.icon;
             return (
-              <motion.div key={service.id} variants={item}>
-                <Card className="bg-card/50 border-white/5 hover:border-primary/50 transition-colors duration-300 h-full backdrop-blur-sm group">
+              <motion.div 
+                key={service.id} 
+                variants={item}
+                whileHover={{ scale: 1.02, y: -4, rotateX: -3, rotateY: 5 }}
+                style={{ perspective: 1000 }}
+                className="h-full"
+              >
+                <Card className="bg-white border-gray-100 shadow-sm hover:shadow-xl hover:border-primary/20 transition-all duration-300 h-full rounded-2xl overflow-hidden group">
                   <CardContent className="p-8">
-                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
-                      <Icon className="w-6 h-6 text-primary" />
+                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                      <Icon className="w-6 h-6 text-primary group-hover:text-white transition-colors duration-300" />
                     </div>
-                    <h4 className="text-xl font-semibold text-white mb-3">{service.title}</h4>
-                    <p className="text-white/60 text-sm leading-relaxed">
+                    <h4 className="text-xl font-semibold text-foreground mb-3">{service.title}</h4>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
                       {service.description}
                     </p>
                   </CardContent>

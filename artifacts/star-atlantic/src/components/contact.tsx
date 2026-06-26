@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -56,49 +56,48 @@ export function Contact() {
   });
 
   const onSubmit = (data: FormValues) => {
-    // In a real app, this would send an API request
     console.log("Form submitted:", data);
     setIsSubmitted(true);
   };
 
   return (
-    <section id="contact" className="py-24 md:py-32 relative">
+    <section id="contact" className="py-24 md:py-32 relative bg-white">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
           
           {/* Contact Info */}
           <div className="lg:col-span-5 space-y-10">
             <div>
               <h2 className="text-sm font-semibold text-primary uppercase tracking-widest mb-3">Get in touch</h2>
-              <h3 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">Ready to sound <br />extraordinary?</h3>
-              <p className="text-white/60 text-lg">
+              <h3 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">Ready to sound <br />extraordinary?</h3>
+              <p className="text-muted-foreground text-lg font-light">
                 Tell us about your project. Our team is ready to help you craft the perfect audio experience.
               </p>
             </div>
 
             <div className="space-y-8">
-              <div className="flex gap-4">
+              <div className="flex gap-4 items-start">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
                   <Mail className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <h4 className="text-sm font-medium text-white/50 uppercase tracking-wider mb-1">Email</h4>
-                  <a href="mailto:staratlanticproductions@gmail.com" className="text-lg text-white hover:text-primary transition-colors">
+                  <h4 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-1">Email</h4>
+                  <a href="mailto:staratlanticproductions@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
                     staratlanticproductions@gmail.com
                   </a>
                 </div>
               </div>
 
-              <div className="flex gap-4">
+              <div className="flex gap-4 items-start">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
                   <Phone className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <h4 className="text-sm font-medium text-white/50 uppercase tracking-wider mb-1">Phone</h4>
-                  <a href="tel:+918883820208" className="text-lg text-white hover:text-primary transition-colors block mb-2">
+                  <h4 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-1">Phone</h4>
+                  <a href="tel:+918883820208" className="text-muted-foreground hover:text-primary transition-colors block mb-3">
                     +91 88838 20208
                   </a>
-                  <Button asChild variant="outline" size="sm" className="rounded-full bg-[#25D366]/10 border-[#25D366]/20 text-[#25D366] hover:bg-[#25D366]/20 hover:text-[#25D366]">
+                  <Button asChild size="sm" className="rounded-full bg-[#25D366] text-white hover:bg-[#20bd5a] shadow-sm">
                     <a href="https://wa.me/918883820208" target="_blank" rel="noopener noreferrer">
                       <SiWhatsapp className="w-4 h-4 mr-2" /> WhatsApp Us
                     </a>
@@ -106,19 +105,19 @@ export function Contact() {
                 </div>
               </div>
 
-              <div className="flex gap-4">
+              <div className="flex gap-4 items-start">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
                   <MapPin className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <h4 className="text-sm font-medium text-white/50 uppercase tracking-wider mb-1">Studio Address</h4>
-                  <address className="text-lg text-white not-italic leading-relaxed">
+                  <h4 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-1">Studio Address</h4>
+                  <address className="text-muted-foreground not-italic leading-relaxed">
                     27/49 Shanmughamani Illam,<br />
                     Lake View Road, West Mambalam,<br />
                     Chennai – 600033, Tamil Nadu, India.
                   </address>
-                  <p className="mt-4 text-sm text-white/50">
-                    <strong className="text-white/70">Hours:</strong> Mon–Sat 10:00 AM – 7:00 PM IST<br />
+                  <p className="mt-4 text-sm text-muted-foreground">
+                    <strong className="text-foreground font-medium">Hours:</strong> Mon–Sat 10:00 AM – 7:00 PM IST<br />
                     Sunday Closed
                   </p>
                 </div>
@@ -126,7 +125,7 @@ export function Contact() {
             </div>
 
             {/* Map */}
-            <div className="rounded-xl overflow-hidden h-64 border border-white/10">
+            <div className="rounded-2xl overflow-hidden h-64 border border-gray-100 shadow-sm">
               <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.858485233192!2d80.2223789!3d13.0446702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526651347ba013%3A0x6b71b8e8f8ab3fb4!2s27%2F49%2C%20Lake%20View%20Rd%2C%20West%20Mambalam%2C%20Chennai%2C%20Tamil%20Nadu%20600033!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
                 width="100%" 
@@ -142,7 +141,7 @@ export function Contact() {
 
           {/* Form */}
           <div className="lg:col-span-7">
-            <Card className="bg-card/50 border-white/10 backdrop-blur-md">
+            <Card className="bg-gray-50/50 border-gray-100 shadow-none sm:shadow-xl sm:shadow-black/5 rounded-3xl overflow-hidden">
               <CardContent className="p-6 md:p-10">
                 {isSubmitted ? (
                   <motion.div 
@@ -150,18 +149,18 @@ export function Contact() {
                     animate={{ opacity: 1, scale: 1 }}
                     className="py-20 text-center"
                   >
-                    <div className="w-20 h-20 bg-green-500/20 text-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-inner">
                       <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <h4 className="text-2xl font-bold text-white mb-2">Message Received</h4>
-                    <p className="text-white/70 text-lg">
+                    <h4 className="text-2xl font-bold text-foreground mb-2">Message Received</h4>
+                    <p className="text-muted-foreground text-lg max-w-md mx-auto">
                       Thank you for contacting Star Atlantic Productions. Our team will get back to you within 24 hours.
                     </p>
                     <Button 
                       variant="outline" 
-                      className="mt-8 rounded-full border-white/20 text-white"
+                      className="mt-8 rounded-full border-gray-200 text-foreground hover:bg-white"
                       onClick={() => setIsSubmitted(false)}
                     >
                       Send another message
@@ -176,9 +175,9 @@ export function Contact() {
                           name="fullName"
                           render={({ field }) => (
                             <FormItem>
-                              <FormLabel className="text-white/80">Full Name *</FormLabel>
+                              <FormLabel className="text-foreground font-semibold">Full Name *</FormLabel>
                               <FormControl>
-                                <Input placeholder="John Doe" className="bg-background/50 border-white/10 h-12 focus-visible:ring-primary" data-testid="input-fullname" {...field} />
+                                <Input placeholder="John Doe" className="bg-white border-gray-200 h-12 focus-visible:ring-primary shadow-sm" data-testid="input-fullname" {...field} />
                               </FormControl>
                               <FormMessage />
                             </FormItem>
@@ -189,9 +188,9 @@ export function Contact() {
                           name="companyName"
                           render={({ field }) => (
                             <FormItem>
-                              <FormLabel className="text-white/80">Company Name</FormLabel>
+                              <FormLabel className="text-foreground font-semibold">Company Name</FormLabel>
                               <FormControl>
-                                <Input placeholder="Acme Films" className="bg-background/50 border-white/10 h-12 focus-visible:ring-primary" data-testid="input-company" {...field} />
+                                <Input placeholder="Acme Films" className="bg-white border-gray-200 h-12 focus-visible:ring-primary shadow-sm" data-testid="input-company" {...field} />
                               </FormControl>
                               <FormMessage />
                             </FormItem>
@@ -205,9 +204,9 @@ export function Contact() {
                           name="email"
                           render={({ field }) => (
                             <FormItem>
-                              <FormLabel className="text-white/80">Email Address *</FormLabel>
+                              <FormLabel className="text-foreground font-semibold">Email Address *</FormLabel>
                               <FormControl>
-                                <Input type="email" placeholder="john@example.com" className="bg-background/50 border-white/10 h-12 focus-visible:ring-primary" data-testid="input-email" {...field} />
+                                <Input type="email" placeholder="john@example.com" className="bg-white border-gray-200 h-12 focus-visible:ring-primary shadow-sm" data-testid="input-email" {...field} />
                               </FormControl>
                               <FormMessage />
                             </FormItem>
@@ -218,9 +217,9 @@ export function Contact() {
                           name="phone"
                           render={({ field }) => (
                             <FormItem>
-                              <FormLabel className="text-white/80">Phone Number *</FormLabel>
+                              <FormLabel className="text-foreground font-semibold">Phone Number *</FormLabel>
                               <FormControl>
-                                <Input placeholder="+91 98765 43210" className="bg-background/50 border-white/10 h-12 focus-visible:ring-primary" data-testid="input-phone" {...field} />
+                                <Input placeholder="+91 98765 43210" className="bg-white border-gray-200 h-12 focus-visible:ring-primary shadow-sm" data-testid="input-phone" {...field} />
                               </FormControl>
                               <FormMessage />
                             </FormItem>
@@ -233,14 +232,14 @@ export function Contact() {
                         name="service"
                         render={({ field }) => (
                           <FormItem>
-                            <FormLabel className="text-white/80">Service Required *</FormLabel>
+                            <FormLabel className="text-foreground font-semibold">Service Required *</FormLabel>
                             <Select onValueChange={field.onChange} defaultValue={field.value}>
                               <FormControl>
-                                <SelectTrigger className="bg-background/50 border-white/10 h-12 focus:ring-primary" data-testid="select-service">
+                                <SelectTrigger className="bg-white border-gray-200 h-12 focus:ring-primary shadow-sm" data-testid="select-service">
                                   <SelectValue placeholder="Select a service" />
                                 </SelectTrigger>
                               </FormControl>
-                              <SelectContent className="bg-card border-white/10 text-white">
+                              <SelectContent className="bg-white border-gray-100">
                                 <SelectItem value="music">Music Production</SelectItem>
                                 <SelectItem value="sound-design">Sound Design</SelectItem>
                                 <SelectItem value="dubbing">Dubbing</SelectItem>
@@ -263,14 +262,14 @@ export function Contact() {
                           name="budget"
                           render={({ field }) => (
                             <FormItem>
-                              <FormLabel className="text-white/80">Estimated Budget *</FormLabel>
+                              <FormLabel className="text-foreground font-semibold">Estimated Budget *</FormLabel>
                               <Select onValueChange={field.onChange} defaultValue={field.value}>
                                 <FormControl>
-                                  <SelectTrigger className="bg-background/50 border-white/10 h-12 focus:ring-primary" data-testid="select-budget">
+                                  <SelectTrigger className="bg-white border-gray-200 h-12 focus:ring-primary shadow-sm" data-testid="select-budget">
                                     <SelectValue placeholder="Select budget range" />
                                   </SelectTrigger>
                                 </FormControl>
-                                <SelectContent className="bg-card border-white/10 text-white">
+                                <SelectContent className="bg-white border-gray-100">
                                   <SelectItem value="under-10k">Under ₹10K</SelectItem>
                                   <SelectItem value="10k-50k">₹10K – ₹50K</SelectItem>
                                   <SelectItem value="50k-1l">₹50K – ₹1L</SelectItem>
@@ -286,14 +285,14 @@ export function Contact() {
                           name="timeline"
                           render={({ field }) => (
                             <FormItem>
-                              <FormLabel className="text-white/80">Project Timeline *</FormLabel>
+                              <FormLabel className="text-foreground font-semibold">Project Timeline *</FormLabel>
                               <Select onValueChange={field.onChange} defaultValue={field.value}>
                                 <FormControl>
-                                  <SelectTrigger className="bg-background/50 border-white/10 h-12 focus:ring-primary" data-testid="select-timeline">
+                                  <SelectTrigger className="bg-white border-gray-200 h-12 focus:ring-primary shadow-sm" data-testid="select-timeline">
                                     <SelectValue placeholder="Select timeline" />
                                   </SelectTrigger>
                                 </FormControl>
-                                <SelectContent className="bg-card border-white/10 text-white">
+                                <SelectContent className="bg-white border-gray-100">
                                   <SelectItem value="asap">ASAP</SelectItem>
                                   <SelectItem value="1-2-weeks">1–2 weeks</SelectItem>
                                   <SelectItem value="1-month">1 month</SelectItem>
@@ -311,11 +310,11 @@ export function Contact() {
                         name="description"
                         render={({ field }) => (
                           <FormItem>
-                            <FormLabel className="text-white/80">Project Description *</FormLabel>
+                            <FormLabel className="text-foreground font-semibold">Project Description *</FormLabel>
                             <FormControl>
                               <Textarea 
                                 placeholder="Tell us about your project, creative vision, and any specific requirements..." 
-                                className="bg-background/50 border-white/10 min-h-[120px] resize-none focus-visible:ring-primary" 
+                                className="bg-white border-gray-200 min-h-[120px] resize-none focus-visible:ring-primary shadow-sm" 
                                 data-testid="input-description"
                                 {...field} 
                               />
@@ -328,7 +327,7 @@ export function Contact() {
                       <Button 
                         type="submit" 
                         size="lg" 
-                        className="w-full h-14 text-base font-semibold rounded-xl bg-primary hover:bg-primary/90 text-primary-foreground shadow-[0_0_20px_rgba(74,144,217,0.2)]"
+                        className="w-full h-14 text-base font-semibold rounded-full bg-primary hover:bg-primary/90 text-white shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 transition-all"
                         data-testid="button-submit-form"
                       >
                         Send Inquiry
