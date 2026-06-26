@@ -35,7 +35,7 @@ export function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-6">Contact</h4>
             <ul className="space-y-3 text-white/60">
-              <li>Chennai, Tamil Nadu, India</li>
+              <li>27/49 Shanmughamani Illam, Lake View Road, West Mambalam, Chennai 600033, Tamil Nadu, India</li>
               <li><a href="mailto:staratlanticproductions@gmail.com" className="hover:text-primary transition-colors">staratlanticproductions@gmail.com</a></li>
               <li><a href="tel:+918883820208" className="hover:text-primary transition-colors">+91 88838 20208</a></li>
             </ul>
