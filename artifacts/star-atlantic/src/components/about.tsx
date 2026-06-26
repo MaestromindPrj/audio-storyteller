@@ -54,7 +54,7 @@ export function About() {
             <div className="aspect-[4/5] rounded-3xl overflow-hidden relative border border-gray-100 shadow-2xl shadow-black/5 bg-white">
               <div className="absolute inset-0 bg-primary/10 mix-blend-multiply z-10 transition-opacity hover:opacity-50"></div>
               <img 
-                src="/about-studio.png" 
+                src="/about-studio.jpg" 
                 alt="High-end studio microphone in cinematic lighting" 
                 className="w-full h-full object-cover"
               />
