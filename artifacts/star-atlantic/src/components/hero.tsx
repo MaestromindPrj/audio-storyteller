@@ -24,7 +24,7 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease: "easeOut" }}
             >
-              <h1 className="text-6xl md:text-8xl font-bold text-foreground mb-6 text-balance leading-[1.1] tracking-tight">
+              <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 text-balance leading-[1.1] tracking-tight">
                 Crafting Sound <br />
                 <span className="text-primary">That Tells Stories.</span>
               </h1>
