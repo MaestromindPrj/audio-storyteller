@@ -22,7 +22,7 @@ const industries = [
 
 export function Industries() {
   return (
-    <section className="py-24 bg-white border-y border-gray-100 overflow-hidden relative">
+    <section id="industries" className="py-24 bg-white border-y border-gray-100 overflow-hidden relative">
       <div className="container mx-auto px-4 md:px-6 relative z-10">
 
         <motion.div

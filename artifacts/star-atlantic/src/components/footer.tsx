@@ -1,3 +1,5 @@
+import { Link } from "wouter";
+
 export function Footer() {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -46,15 +48,16 @@ export function Footer() {
             © 2025 Star Atlantic Productions. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
-            <a href="/terms" className="text-muted-foreground/60 hover:text-primary text-sm transition-colors" data-testid="link-terms">
+            <Link href="/terms" className="text-muted-foreground/60 hover:text-primary text-sm transition-colors" data-testid="link-terms">
               Terms &amp; Conditions
-            </a>
-            <a href="/privacy" className="text-muted-foreground/60 hover:text-primary text-sm transition-colors" data-testid="link-privacy">
+            </Link>
+            <Link href="/privacy" className="text-muted-foreground/60 hover:text-primary text-sm transition-colors" data-testid="link-privacy">
               Privacy Policy
-            </a>
+            </Link>
           </div>
         </div>
       </div>
     </footer>
   );
 }
+

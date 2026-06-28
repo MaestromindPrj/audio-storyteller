@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -29,7 +29,10 @@ const formSchema = z.object({
   fullName: z.string().min(2, "Full name is required"),
   companyName: z.string().optional(),
   email: z.string().email("Invalid email address"),
-  phone: z.string().min(8, "Phone number is required"),
+  phone: z.string().regex(
+    /^[+]?[(]?[0-9]{1,4}[)]?[-\s.]?[0-9]{3}[-\s.]?[0-9]{4,10}$/,
+    "Please enter a valid phone number"
+  ),
   service: z.string().min(1, "Please select a service"),
   budget: z.string().min(1, "Please select a budget"),
   timeline: z.string().min(1, "Please select a timeline"),
@@ -40,6 +43,8 @@ type FormValues = z.infer<typeof formSchema>;
 
 export function Contact() {
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -55,9 +60,27 @@ export function Contact() {
     }
   });
 
-  const onSubmit = (data: FormValues) => {
-    console.log("Form submitted:", data);
-    setIsSubmitted(true);
+  const onSubmit = async (data: FormValues) => {
+    setIsSubmitting(true);
+    setSubmitError(null);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      if (!res.ok) {
+        const body = await res.json().catch(() => ({}));
+        throw new Error((body as { error?: string }).error ?? "Server error, please try again.");
+      }
+      setIsSubmitted(true);
+    } catch (err) {
+      setSubmitError(
+        err instanceof Error ? err.message : "Something went wrong. Please try again or email us directly."
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -273,6 +296,7 @@ export function Contact() {
                                   </SelectTrigger>
                                 </FormControl>
                                 <SelectContent className="bg-white border-gray-100">
+                                  <SelectItem value="not-sure">Not sure / Let's discuss</SelectItem>
                                   <SelectItem value="1l-3l">₹1L – ₹3L</SelectItem>
                                   <SelectItem value="3l-5l">₹3L – ₹5L</SelectItem>
                                   <SelectItem value="5l-10l">₹5L – ₹10L</SelectItem>
@@ -327,13 +351,27 @@ export function Contact() {
                         )}
                       />
 
+                      {submitError && (
+                        <p className="text-sm text-red-500 bg-red-50 border border-red-200 rounded-xl px-4 py-3">
+                          {submitError}
+                        </p>
+                      )}
+
                       <Button 
                         type="submit" 
                         size="lg" 
-                        className="w-full h-14 text-base font-semibold rounded-full bg-primary hover:bg-primary/90 text-white shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 transition-all"
+                        disabled={isSubmitting}
+                        className="w-full h-14 text-base font-semibold rounded-full bg-primary hover:bg-primary/90 text-white shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 transition-all disabled:opacity-70 disabled:cursor-not-allowed"
                         data-testid="button-submit-form"
                       >
-                        Send Inquiry
+                        {isSubmitting ? (
+                          <span className="flex items-center gap-2">
+                            <Loader2 className="w-4 h-4 animate-spin" />
+                            Sending…
+                          </span>
+                        ) : (
+                          "Send Inquiry"
+                        )}
                       </Button>
                     </form>
                   </Form>
