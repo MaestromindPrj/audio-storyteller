@@ -52,3 +52,11 @@ Thumbs.db
 .env
 .env.local
 .env.*.local
+
+# API Server generated build files in api folder
+/artifacts/api-server/api/*.js.map
+/artifacts/api-server/api/pino-*.js
+/artifacts/api-server/api/pino-*.js.map
+/artifacts/api-server/api/thread-stream-worker.js
+/artifacts/api-server/api/thread-stream-worker.js.map
+
